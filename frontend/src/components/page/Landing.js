@@ -20,7 +20,7 @@ export default function Landing({isAuthenticated, setIsAuthenticated}) {
   useEffect(() => {
     async function getAndSetNumberAllTodo() {
       try{
-        const response = await axios.get('http://52.91.123.165:3001/api/todo/count', {
+        const response = await axios.get('http://52.206.127.45:3001/api/todo/count', {
           headers: {
             'Authorization': `Bearer ${sessionStorage.getItem('token')}`,
           }
@@ -38,7 +38,7 @@ export default function Landing({isAuthenticated, setIsAuthenticated}) {
 
     async function getAndSetNumberAllTodoNotCompleted() {
       try{
-        const response = await axios.get('http://52.91.123.165:3001/api/todo/count?isCompleted=false', {
+        const response = await axios.get('http://52.206.127.45:3001/api/todo/count?isCompleted=false', {
           headers: {
             'Authorization': `Bearer ${sessionStorage.getItem('token')}`,
           }
