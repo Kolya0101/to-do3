@@ -1,6 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\backend",
+    "\\backend\\to-do-list",
+    "\\frontend",
+    "\\frontend\\openshift",
+    "\\frontend\\public",
+    "\\frontend\\src"
   ],
+  "SelectedNode": "\\frontend\\src",
   "PreviewInSolutionExplorer": false
 }
