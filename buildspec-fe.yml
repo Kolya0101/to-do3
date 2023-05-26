@@ -1,15 +1,15 @@
 version: 0.2
 phases:
-build:
-ñommands:
-- echo Build started on 'date'
-- cd frontend
-- npm install 
-- npm run build
-post_build:
-commands:
-- echo Build completed on 'date'
+ build:
+   commands:
+    - echo Build started on 'date'
+    - cd frontend
+    - npm install 
+    - npm run build
+ post_build:
+  commands:
+   - echo Build completed on 'date'
 artifacts:
-base-directory: frontend/build
-files:
+ base-directory: frontend/build
+ files:
    - '**/*'
